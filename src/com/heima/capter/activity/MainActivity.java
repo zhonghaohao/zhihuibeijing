@@ -32,6 +32,7 @@ public class MainActivity extends SlidingFragmentActivity {
 		//这个要求在设置布局即setContentView()之前调用
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_main);
+		
 		setBehindContentView(R.layout.left_menu);//设置侧边栏
 		
 		SlidingMenu slidingMenu = getSlidingMenu();
@@ -71,8 +72,8 @@ public class MainActivity extends SlidingFragmentActivity {
 		}
 
 		/**
-		 *  获取主页面fragment
-		 * @return  填充内容的fragment布局
+		 *  获取主页面fragment  填充五个pager中间的部分内容的fragment布局
+		 * @return  一个空的fragment
 		 */
 		public ContentFragment getContentFragment() {
 			FragmentManager fm = getSupportFragmentManager();

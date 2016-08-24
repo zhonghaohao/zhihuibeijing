@@ -3,13 +3,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000" >
-
-    <TextView 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="测试要删除"
-        android:textColor="#fff"
-        android:textSize="20sp"/>
+    <!-- android:divider="@android:color/transparent" 将listView的分隔线设置为透明
+         android:dividerHeight="0dp"	将listView的分隔线设置为0,即去掉分隔线
+         android:listSelector="@android:color/transparent" 设置点击的效果，也可以加自己写的select
+    -->
     <ListView
         android:id="@+id/lv_list"
         android:layout_width="match_parent"

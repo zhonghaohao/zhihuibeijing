@@ -69,10 +69,7 @@ public class ContentFragment extends BaseFragment {
 		mPagerList.add(new GovAffairsPager(mActivity));
 		mPagerList.add(new SettingPager(mActivity));
 
-		
-		
 		mViewPager.setAdapter(new ContentAdapter());
-		
 		
 		
 		/**
@@ -166,6 +163,10 @@ public class ContentFragment extends BaseFragment {
 		public void destroyItem(ViewGroup container, int position, Object object) {
 			container.removeView((View) object);
 		}
+	}
+
+	public NewsCenterPager getNewsCenterPager() {
+		return (NewsCenterPager) mPagerList.get(1);
 	}
 
 }

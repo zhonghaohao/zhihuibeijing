@@ -22,7 +22,8 @@ public class NoScrollViewPager extends ViewPager {
 	}
 
 	/**
-	 * 返回false表示不拦截，通过与onTouchEvent()配合， 只要Viewpager的子View没有处理事件，事件就会消失
+	 * 为了处理在主页面1(除底部)和主页面2中间部分(除底部和顶部)的两个ViewPager的冲突
+	 * 要求：限制主页面1的滑动事件，又不限制主页面2的滑动
 	 */
 	@Override
 	public boolean onInterceptTouchEvent(MotionEvent ev) {
